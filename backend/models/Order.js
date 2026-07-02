@@ -22,7 +22,7 @@ const OrderSchema = new mongoose.Schema(
       default: "pending",
       required: true,
     },
-    paystackReference: { type: String, required: true },
+    paystackReference: { type: String, default: "" },
   },
   { timestamps: true },
 );
